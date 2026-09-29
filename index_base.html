@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITULO_EMAIL}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- Evita alguns problemas de renderização em Outlook -->
+  <!--[if mso]>
+  <style>
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: 0;
+    }
+  </style>
+  <![endif]-->
+</head>
+
+<body style="
+  margin:0;
+  padding:0;
+  background-color:#101730;
+  font-family:Manrope, Helvetica, sans-serif;
+">
+
+  <!-- Container principal -->
+  <table
+    width="100%"
+    cellpadding="0"
+    cellspacing="0"
+    border="0"
+    style="background-color:#000000;"
+  >
+    <tr>
+      <td align="center" style="padding:30px 15px;">
+
+        <!-- Corpo do e-mail -->
+        <table
+          width="600"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          style="
+            width:100%;
+            max-width:600px;
+            background-color:#152040;
+            border-radius:10px;
+            overflow:hidden;
+          "
+        >
+
+          <!-- ========================= -->
+          <!-- HEADER -->
+          <!-- ========================= -->
+
+          <tr>
+            <td
+              style="
+                padding:25px 35px;
+                background-color:#17212b;
+                border-bottom:1px solid #17212b;
+                text-align: center;
+              "
+            >
+
+              <a
+                href="https://nuageit.com.br/"
+                target="_blank"
+                style="text-decoration:none;"
+              >
+
+                <img
+                  src="https://joaovitorjvc.github.io/nuage_emails/nuage_logo_transparente.png"
+                  alt="Nuage"
+                  width="130"
+                  style="
+                    display:block;
+                    width:130px;
+                    max-width:130px;
+                    height:auto;
+                    border:0;
+                    margin:0 auto;
+                  "
+                >
+
+              </a>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- CATEGORIA -->
+          <!-- ========================= -->
+
+          <tr>
+            <td style="padding:35px 35px 10px 35px;">
+
+              <p style="
+                margin:0;
+                color:#5b6b7a;
+                font-size:12px;
+                font-weight:bold;
+                letter-spacing:1.5px;
+                text-transform:uppercase;
+              ">
+                NUAGE TECH INSIGHTS
+              </p>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- TITULO -->
+          <!-- ========================= -->
+
+          <tr>
+            <td style="padding:10px 35px 20px 35px;">
+
+              <h1 style="
+                margin:0;
+                color:#ffffff;
+                font-size:28px;
+                line-height:1.25;
+                font-weight:700;
+              ">
+                Titulo da Notícia: {{TITULO_NOTICIA}}
+              </h1>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- IMAGEM -->
+          <!-- ========================= -->
+
+          <tr>
+            <td style="padding:0 35px 25px 35px;">
+
+              <a
+                href="{{LINK_NOTICIA}}"
+                target="_blank"
+                style="text-decoration:none;"
+              >
+
+                <img
+                  src="{{URL_IMAGEM}}"
+                  alt="{{ALT_IMAGEM}}"
+                  width="530"
+                  style="
+                    display:block;
+                    width:100%;
+                    max-width:530px;
+                    height:auto;
+                    border:0;
+                    border-radius:8px;
+                  "
+                >
+
+              </a>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- RESUMO -->
+          <!-- ========================= -->
+
+          <tr>
+            <td style="padding:0 35px 20px 35px;">
+
+              <p style="
+                margin:0;
+                color:#ffffff;
+                font-size:16px;
+                line-height:1.7;
+              ">
+               {{RESUMO_NOTICIA}}
+
+
+              </p>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- BOTAO NOTICIA -->
+          <!-- ========================= -->
+
+          <tr>
+            <td style="padding:5px 35px 35px 35px;">
+
+              <table
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+              >
+                <tr>
+                  <td
+                    style="
+                      background-color:#7663F2;
+                      border-radius:6px;
+                    "
+                  >
+
+                    <a
+                      href="{{LINK_NOTICIA}}"
+                      target="_blank"
+                      style="
+                        display:inline-block;
+                        padding:14px 28px;
+                        color:#ffffff;
+                        font-size:14px;
+                        font-weight:bold;
+                        text-decoration:none;
+                      "
+                    >
+                      Ler notícia completa →
+                    </a>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- DIVISOR -->
+          <!-- ========================= -->
+
+          <tr>
+            <td style="padding:0 35px;">
+
+              <div style="
+                height:1px;
+                background-color:#eeeeee;
+                line-height:1px;
+                font-size:1px;
+              ">
+                &nbsp;
+              </div>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- POR QUE ISSO IMPORTA -->
+          <!-- ========================= -->
+
+          <tr>
+            <td style="padding:35px 35px 10px 35px;">
+
+              <h2 style="
+                margin:0;
+                color:#ffffff;
+                font-size:20px;
+                line-height:1.4;
+              ">
+                Por que isso importa?
+                
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:5px 35px 30px 35px;">
+
+              <p style="
+                margin:0;
+                color:#ffffff;
+                font-size:15px;
+                line-height:1.7;
+              ">
+                {{POR_QUE_IMPORTA}}
+
+
+              </h2>
+              </p>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- CONEXAO COM TECNOLOGIA -->
+          <!-- ========================= -->
+
+          <tr>
+            <td style="
+              padding:25px 35px;
+              background-color:#152040;
+            ">
+
+              <h2 style="
+                margin:0 0 12px 0;
+                color:#ffffff;
+                font-size:19px;
+                line-height:1.4;
+              ">
+                E na prática?
+              </h2>
+
+              <p style="
+                margin:0;
+                color:#ffffff;
+                font-size:15px;
+                line-height:1.7;
+              ">
+               {{PRATICA_NOTICIA}}
+              </p>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- CTA -->
+          <!-- ========================= -->
+
+          <tr>
+            <td
+              align="center"
+              style="
+                padding:35px;
+              "
+            >
+
+              <h2 style="
+                margin:0 0 10px 0;
+                color:#ffffff;
+                font-size:20px;
+              ">
+                Quer entender como isso pode se aplicar à sua empresa?
+              </h2>
+
+              <p style="
+                margin:0 0 22px 0;
+                color:#ffffff;
+                font-size:14px;
+                line-height:1.6;
+              ">
+                Nossa equipe pode ajudar a avaliar possibilidades
+                relacionadas a cloud, IA, dados e infraestrutura.
+              </p>
+
+
+              <table
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+              >
+                <tr>
+
+                  <td
+                    style="
+                      background-color:#7663F2;
+                      border-radius:6px;
+                    "
+                  >
+
+                    <a
+                      href="https://linktr.ee/LuisaNuage"
+                      target="_blank"
+                      style="
+                        display:inline-block;
+                        padding:14px 28px;
+                        color:#ffffff;
+                        font-size:15px;
+                        font-weight:bold;
+                        text-decoration:none;
+                      "
+                    >
+                      Falar com a Nuage →
+                    </a>
+
+                  </td>
+
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+
+          <!-- ========================= -->
+          <!-- FOOTER -->
+          <!-- ========================= -->
+
+          <tr>
+            <td
+              align="center"
+              style="
+                padding:25px 35px;
+                background-color:#17212b;
+              "
+            >
+
+              <p style="
+                margin:0 0 10px 0;
+                color:#ffffff;
+                font-size:14px;
+                font-weight:bold;
+              ">
+                NuageIT
+              </p>
+
+              <p style="
+                margin:0 0 15px 0;
+                color:#b9c2ca;
+                font-size:12px;
+                line-height:1.5;
+              ">
+                Cloud • IA • Dados • Segurança
+              </p>
+
+
+              <p style="
+                margin:0;
+                font-size:12px;
+              ">
+
+                <a
+                  href="https://nuageit.com.br/"
+                  target="_blank"
+                  style="
+                    color:#ffffff;
+                    text-decoration:none;
+                  "
+                >
+                  Site
+                </a>
+
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+
+                <a
+                  href="https://www.linkedin.com/company/nuageit/posts/?feedView=all"
+                  target="_blank"
+                  style="
+                    color:#ffffff;
+                    text-decoration:none;
+                  "
+                >
+                  LinkedIn
+                </a>
+
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+
+                <a
+                  href="https://linktr.ee/LuisaNuage"
+                  target="_blank"
+                  style="
+                    color:#ffffff;
+                    text-decoration:none;
+                  "
+                >
+                  Contato
+                </a>
+
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- ========================= -->
+        <!-- DESCADASTRO -->
+        <!-- ========================= -->
+
+        <table
+          width="600"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          style="
+            width:100%;
+            max-width:600px;
+          "
+        >
+
+          <tr>
+
+            <td
+              align="center"
+              style="
+                padding:20px 30px;
+              "
+            >
+
+              <p style="
+                margin:0;
+                color:#999999;
+                font-size:11px;
+                line-height:1.5;
+              ">
+                Você está recebendo este e-mail porque
+                possui relacionamento profissional com a Nuage.
+                <br><br>
+
+                <a
+                  href="{{LINK_DESCADASTRO}}"
+                  target="_blank"
+                  style="
+                    color:#888888;
+                    text-decoration:underline;
+                  "
+                >
+                  Não deseja mais receber nossos e-mails?
+                </a>
+
+              </p>
+
+            </td>
+
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
